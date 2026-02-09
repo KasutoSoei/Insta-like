@@ -1,6 +1,8 @@
 .DS_Store
 .env
 /node_modules/
+packages/frontend/node_modules/
+packages/backend/node_modules/
 
 # React Router
 /.react-router/

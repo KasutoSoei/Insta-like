@@ -1,6 +1,7 @@
 import { useForm, type SubmitHandler, Controller } from "react-hook-form";
 import { zodResolver } from '@hookform/resolvers/zod';
 import z from "zod";
+import { register } from "~/services/auth";
 
 const RegisterUserSchema = z
   .object({
@@ -31,9 +32,7 @@ export default function Register() {
 
   const onSubmit: SubmitHandler<RegisterUserSchemaType> = async (data) => {
     try {
-      //await registerAccount(data);
-      //await loginAccount(data);
-      //router.push('/weeklyPicks');
+      await register()
     } catch (error) {
       console.error('Registration Failed', error);
     }
@@ -58,7 +57,7 @@ export default function Register() {
 
       <Controller
         render={({ field }) => <input type="password" placeholder="Confirm your password" {...field} />}
-        name="password"
+        name="confirmPassword"
         control={form.control}
       />
 

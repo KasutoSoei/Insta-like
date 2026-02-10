@@ -1,8 +1,6 @@
 # Dependencies
 node_modules
-
 .react-router
-
 # Build
 dist
 

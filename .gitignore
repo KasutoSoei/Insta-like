@@ -5,7 +5,7 @@ packages/frontend/node_modules/
 packages/backend/node_modules/
 
 # React Router
-/.react-router/
+frontend/.react-router/
 /build/
 
 pnpm-lock.yaml

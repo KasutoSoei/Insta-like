@@ -7,3 +7,7 @@ packages/backend/node_modules/
 # React Router
 /.react-router/
 /build/
+
+pnpm-lock.yaml
+package-lock.json
+
